@@ -1,4 +1,3 @@
-/*2 ~ 10 Áø¹ı¸¸ °¡´É, 2^16ÀÌÇÏÀÇ ¼ö¸¸ °¡´É*/
 #include<stdio.h>
 
 int notation(int l, int n, int m);
@@ -48,7 +47,7 @@ int notation(int l, int m, int n) {
 	num = l;
 	int j = 15;
 	
-	printf("%d(%dÁø¹ı) : ", num, m);
+	printf("%d(%dæŸ³è¿‡) : ", num, m);
 	
 	while (1) {
 		printf("%d", arr_m[j]);
@@ -58,7 +57,7 @@ int notation(int l, int m, int n) {
 	
 	j = 15;
 	
-	printf("\n%d(%dÁø¹ı) : ", num, n);
+	printf("\n%d(%dæŸ³è¿‡) : ", num, n);
 	
 	while (1) {
 		
