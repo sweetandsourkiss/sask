@@ -4,12 +4,12 @@ int euclidean(int a, int b);
 
 int main() {
 	int a, b, c;
-	printf("¼¼ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf_s("%d", &a);
 	scanf_s("%d", &b);
 	scanf_s("%d", & c);
 
-	printf("¼¼ ¼öÀÇ ÃÖ´ë°ø¾à¼ö´Â : %d", euclidean(c, euclidean(a, b)));
+	printf("ë‘ ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜ëŠ” : %d", euclidean(a, b));
 
 	return 0;
 }
