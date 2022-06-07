@@ -7,7 +7,7 @@ int main() {
 	printf("Put a number : ");
 	scanf_s("%d", &n); // n <=100
 
-	printf("%d ÀÌÇÏÀÇ ¼Ò¼ö\n", n);
+	printf("%d Ã€ÃŒÃ‡ÃÃ€Ã‡ Â¼Ã’Â¼Ã¶\n", n);
 	printf("---------------------------\n");
 
 	sieve(n);
