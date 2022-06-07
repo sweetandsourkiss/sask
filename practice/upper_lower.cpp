@@ -7,14 +7,14 @@ int upper_lower(char* str);
 int main() {
 	char str[100];
 
-	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%s", str);
 
-	printf("¿ø·¡ ¹®ÀÚ¿­ %s \n", str);
+	printf("ì›ë˜ ë¬¸ìì—´ %s \n", str);
 
 	upper_lower(str);
 
-	printf("³ªÁß ¹®ÀÚ¿­ %s \n", str);
+	printf("ë‚˜ì¤‘ ë¬¸ìì—´ %s \n", str);
 
 	return 0;
 }
