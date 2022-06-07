@@ -7,15 +7,15 @@ int str_reverse(char* str);
 int main() {
 	char str[100];
 
-	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%s", &str);
 	
 
-	printf("\n ¿ø·¡ ¹®ÀÚ¿­Àº %s \n", str);
+	printf("\n ì›ë˜ ë¬¸ìì—´ì€ %s \n", str);
 
-	printf("------¹®ÀÚ¿­À» µÚÁıÀÚ!--------- \n");
+	printf("------ë¬¸ìì—´ì„ ë’¤ì§‘ì!--------- \n");
 
-	printf("³ªÁß ¹®ÀÚ¿­Àº ");
+	printf("ë‚˜ì¤‘ ë¬¸ìì—´ì€ ");
 
 	str_reverse(str);
 
