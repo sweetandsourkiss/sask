@@ -48,5 +48,6 @@ int find_loca(char* str, char* word) {
 
 	if (*str == '\0') {
 		printf("Error!!! check your word RIGHT NOW!!!");
+		return 0;
 	}
 }
