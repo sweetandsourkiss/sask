@@ -1,15 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
-int rgst(char(*title)[30], char(*author)[30], char(*publisher)[30], int* borrowed, int* num_total_book); // å ��� �Լ�
-int srch(char(*title)[30], char(*author)[30], char(*publisher)[30], int num_total_book); // å �˻� �Լ�
-int brrw(int* borrowed); // å ���� �Լ�
-int rtrn(int* borrowed); // å �ݳ� �Լ�
-int find(char* all, char* part);
+int rgst(char(*title)[30], char(*author)[30], char(*publisher)[30], int* borrowed, int* num_total_book); // 책 등록 함수
+int srch(char(*title)[30], char(*author)[30], char(*publisher)[30], int num_total_book); // 책 검색 함수
+int brrw(int* borrowed); // 책 대출 함수
+int rtrn(int* borrowed); // 책 반납 함수
+int find(char* all, char* part);//문자열  함수
 
 int main() {
-	char title[100][30], author[100][30], publisher[100][30];
-	int borrowed[100];
+	char title[100][30], author[100][30], publisher[100][30]; //제목, 작가, 출판사. 길이 30자 
+	int borrowed[100];//대출 여부
 	int input, num_total_book = 0;
 
 	while (1) {
@@ -53,7 +53,7 @@ int main() {
 	return 0;
 }
 
-//å ��� �Լ�
+//책 등록 함수
 int rgst(char(*title)[30], char(*author)[30], char(*publisher)[30], int* borrowed, int* num_total_book) {
 	printf("&Title : ");
 	scanf("%s", title[*num_total_book]);
@@ -70,6 +70,7 @@ int rgst(char(*title)[30], char(*author)[30], char(*publisher)[30], int* borrowe
 	return 0;
 }
 
+//문자열  함수
 int find(char* all, char* part) {
 	int temp = 0;
 
@@ -99,7 +100,7 @@ int find(char* all, char* part) {
 	return 0;
 }
 
-// å �˻� �Լ�
+// 책 검색 함수
 int srch(char(*title)[30], char(*author)[30], char(*publisher)[30], int num_total_book) {
 	char user_input[30];
 
@@ -115,7 +116,7 @@ int srch(char(*title)[30], char(*author)[30], char(*publisher)[30], int num_tota
 	}
 	return 0;
 }
-// å ���� �Լ�
+// 책 대출 함수
 int brrw(int* borrowed) {
 	int user_input;
 
@@ -132,7 +133,7 @@ int brrw(int* borrowed) {
 	return 0;
 }
 
-// å �ݳ� �Լ�
+// 책 반납 함수
 int rtrn(int* borrowed) {
 	int user_input;
 
